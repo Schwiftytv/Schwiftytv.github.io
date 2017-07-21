@@ -25,25 +25,14 @@
  
 </style>
 
+
 <?php
-if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['someAction']))
-    {
-	function youtube()
-$ytarray=explode("/", $videolink);
-$ytendstring=end($ytarray);
-$ytendarray=explode("?v=", $ytendstring);
-$ytendstring=end($ytendarray);
-$ytendarray=explode("&", $ytendstring);
-$ytcode=$ytendarray[0];
-echo "<iframe width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/$ytcode\" frameborder=\"0\" allowfullscreen></iframe>";
+include 'C:\Users\Schwifty\Desktop\Mi pagina\Schwiftytv.github.io\my-videos.php';
+
+foreach( $myVideos as $video ) {
+    echo $video;
 }
 ?>
-
-
-<form action="overwatch1.html" method="post">
-<input type="text" id="videolink">
-    <input type="submit" name="someAction" value="GO" />
-</form>
 
 
 <div id="tableContainer-1">
