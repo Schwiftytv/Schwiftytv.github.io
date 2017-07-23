@@ -37,12 +37,16 @@
         jQuery("a.bla-1").YouTubePopUp();
         jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
     });
+	
+	function goBack() {
+    window.history.back();
+}
 </script>
 
 <div id="tableContainer-1">
   <div id="tableContainer-2">
   <table id="myTable2" width="100%">
-  <tr><th bgcolor="white"><font size="5"><a href="C:\Users\Schwifty\Desktop\Mi pagina\Schwiftytv.github.io\Aldo.html" style="color:black">ATRAS</a></font></th><th><font size="5" color="white">LEAGUE OF LEGENDS</font></th><th></th>
+  <tr><th bgcolor="white"onclick="goBack();"><font size="5">ATRAS</a></font></th><th><font size="5" color="white">LEAGUE OF LEGENDS</font></th><th></th>
   </table>
   <hr>
     <table id="myTable">
