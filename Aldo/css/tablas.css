@@ -6,7 +6,7 @@
 
 
 @media  (max-width:1500px){
-    myTable{
+    #myTable{
         width:100%;
     }
 
@@ -18,7 +18,7 @@
 
     tr{
         display:block;
-        margin-left:25%;
+        margin-left:20%;
     }
 
     tr tr{
