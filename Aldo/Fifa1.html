@@ -1,35 +1,8 @@
 <html>
 <body background-color="black">
-<style>
-  html, body {
-    height: 100%;
-	background-color:black;
-  }
-  #tableContainer-1 {
-    height: 10%;
-    width: 100%;
-    display: table;
-	
-  }
-  #tableContainer-2 {
-    vertical-align: middle;
-    display: table-cell;
-    height: 100%;
-  }
-  #myTable {
-    margin: 0 auto;
-	table-layout: fixed;
-	border-spacing: 50px;
-  }
-  
-    #myTable2 {
-    margin: 0 auto;
-	table-layout: fixed;
-	border-spacing: 0px;
-  } 
-</style>
 
 <link rel="stylesheet" type="text/css" href="YouTubePopUp.css">
+<link rel="stylesheet" href="css/tablas.css"/>
 <script type="text/javascript" src="jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="YouTubePopUp.jquery.js"></script>
 <script type="text/javascript">
@@ -45,20 +18,19 @@ function goBack() {
 
 </script>
 
-<div id="tableContainer-1">
-  <div id="tableContainer-2">
-  <table id="myTable2" width="100%">
+
+  <table id="myTable2" width="100%" style="margin: auto; table-layout: fixed" >
   <tr><th bgcolor="white" onclick="goBack();"><font size="5">ATRAS</a></font></th><th><font size="5" color="white">FIFA</font></th><th></th>
   </table>
   <hr>
-    <table id="myTable">
+    <table id="myTable" style="margin: auto; table-layout: inherit" height="500px" width="1800px" >
 	
 
 	<tr><td>		<a href="https://www.youtube.com/watch?v=hueh_9No7rg" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/hueh_9No7rg/maxresdefault.webp"></a>								</td>
 	  <td>			<a href="https://www.youtube.com/watch?v=86IcHoCPUoA" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/86IcHoCPUoA/maxresdefault.webp"></a>								</td>
-<!--	  <td>			<a href="https://www.youtube.com/watch?v=ID1" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/ID1/maxresdefault.webp"></a>								</td></tr>
+	  <td>			<a href="https://www.youtube.com/watch?v=86IcHoCPUoA" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/86IcHoCPUoA/maxresdefault.webp"></a>								</td></tr>
 	  
-	  <tr><td>		<a href="https://www.youtube.com/watch?v=ID1" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/ID1/maxresdefault.webp"></a>								</td>
+<!--	  <tr><td>		<a href="https://www.youtube.com/watch?v=ID1" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/ID1/maxresdefault.webp"></a>								</td>
 	  <td>			<a href="https://www.youtube.com/watch?v=ID1" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/ID1/maxresdefault.webp"></a>								</td>
 	  <td>			<a href="https://www.youtube.com/watch?v=ID1" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/ID1/maxresdefault.webp"></a>								</td></tr>
 	  
@@ -144,8 +116,7 @@ function goBack() {
 	  
 	  
     </table>
-  </div>
-</div>
+
 
 </font>
 </body>

@@ -51,7 +51,7 @@
                 var videoEmbedLink = "https://player.vimeo.com/video/"+cleanVideoID+"?autoplay="+YouTubePopUpOptions.autoplay+"";
             }
 
-            $("body").append('<div class="YouTubePopUp-Wrap YouTubePopUp-animation"><div class="YouTubePopUp-Content"><span class="YouTubePopUp-Close"></span><iframe src="'+videoEmbedLink+'&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"" allowfullscreen></iframe></div></div>');
+            $("body").append('<div class="YouTubePopUp-Wrap YouTubePopUp-animation"><div class="YouTubePopUp-Content"><span class="YouTubePopUp-Close"></span><iframe src="'+videoEmbedLink+'&amp;rel=0&amp;&amp;showinfo=0&" frameborder="0"" allowfullscreen></iframe></div></div>');
 
             if( $('.YouTubePopUp-Wrap').hasClass('YouTubePopUp-animation') ){
                 setTimeout(function() {
