@@ -5,8 +5,8 @@
 }
 
 
-@media all and (max-width:1500px){
-    Table{
+@media  (max-width:1500px){
+    myTable{
         width:100%;
     }
 
@@ -18,7 +18,6 @@
 
     tr{
         display:block;
-        margin-bottom:30px;
         margin-left:25%;
     }
 

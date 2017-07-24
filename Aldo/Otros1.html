@@ -1,35 +1,9 @@
 <html>
 <body background-color="black">
-<style>
-  html, body {
-    height: 100%;
-	background-color:black;
-  }
-  #tableContainer-1 {
-    height: 10%;
-    width: 100%;
-    display: table;
-	
-  }
-  #tableContainer-2 {
-    vertical-align: middle;
-    display: table-cell;
-    height: 100%;
-  }
-  #myTable {
-    margin: 0 auto;
-	table-layout: fixed;
-	border-spacing: 50px;
-  }
-  
-     #myTable2 {
-    margin: 0 auto;
-	table-layout: fixed;
-	border-spacing: 0px;
-  }
-</style>
-
+    
+       
 <link rel="stylesheet" type="text/css" href="YouTubePopUp.css">
+<link rel="stylesheet" href="css/tablas.css"/>
 <script type="text/javascript" src="jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="YouTubePopUp.jquery.js"></script>
 <script type="text/javascript">
@@ -38,18 +12,19 @@
         jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
     });
 	
-	function goBack() {
+
+function goBack() {
     window.history.back();
 }
-</script>
 
-<div id="tableContainer-1">
-  <div id="tableContainer-2">
-  <table id="myTable2" width="100%">
+</script>
+    
+    
+  <table id="myTable2" width="100%" style="margin: auto; table-layout: fixed">
   <tr><th bgcolor="white"onclick="goBack();"><font size="5">ATRAS</a></font></th><th><font size="5" color="white">OTROS</font></th><th></th>
   </table>
   <hr>
-    <table id="myTable">
+    <table id="myTable" style="margin: auto;" height="500px" width="1800px" >
 	  	  
 	  <tr><td>		<a href="https://www.youtube.com/watch?v=oAwCd77jbUY" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/oAwCd77jbUY/maxresdefault.webp"></a>								</td>
 	  <td>			<a href="https://www.youtube.com/watch?v=LmeiOFYa-hc" class="bla-1"><img width="560" height="315" src="https://i.ytimg.com/vi_webp/LmeiOFYa-hc/maxresdefault.webp"></a>								</td>
@@ -134,8 +109,7 @@
 	  
 	  
     </table>
-  </div>
-</div>
+
 
 </font>
 </body>
