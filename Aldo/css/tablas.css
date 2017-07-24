@@ -2,5 +2,26 @@
     height: 100%;
       width: 100%;
 		background-color:black;
+}
 
-      
+
+@media all and (max-width:1200px){
+    Table{
+        width:100%;
+    }
+
+    td{
+        display:block;
+        width:100%;
+        height: 400px;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+
+    tr tr{
+        margin-bottom:0;
+    }
+}
