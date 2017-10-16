@@ -1,42 +1,14 @@
 <html>
-<script >
-var cells = document.querySelectorAll("#myTable td");
-var search = document.getElementById("myInput");
 
-search.addEventListener("keyup", function(){
-
-  for(var i = 0; i < cells.length; ++i){
-    // This line checks for an exact match in a cell against what the
-    // user entered in the search box
-    //if(cells[i].textContent.toLowerCase() === search.value.toLowerCase()){
-    
-    // This checks for cells that start with what the user has entered
-    if(cells[i].textContent.toLowerCase().indexOf(search.value.toLowerCase()) === 0){      
-        cells.forEach(function(element){
-            element.style.display = "none";
-        });
-        cells[i].style.background = "yellow";
-        cells[i].style.display = "table-cell";
-        break;
-    } else {
-        cells[i].style.background = "white";
-        cells.forEach(function(element){
-          if(cells[i] !== element){
-            element.style.display = "table-cell";
-          }
-        }); 
-    }    
-  }
-
-});
-</script>
 <title>Futbol</title> 
 <body background-color="black">
     
     
 <link rel="stylesheet" type="text/css" href="z/YouTubePopUp.css">
 <link rel="stylesheet" href="z/css/tablas.css"/>
+<script type="text/javascript" src="z/jquery-1.12.1.min.js"></script>
     
+
 
     <center><font size="7" color="white">Futbol</font></center>
     <hr color="white" size="5px">
@@ -46,10 +18,17 @@ search.addEventListener("keyup", function(){
 
     
 	
-    <tr><td>	<center><font color="white"> Skill move </font> <br> <iframe width="720" height="480" src="https://streamable.com/s/wzuyc/ytdlny" frameborder="0" allowfullscreen=""></iframe>		</center>								</td>
-		<td>	<center><font color="white"> Chilena 	</font>	<br> <iframe width="720" height="480" src="https://streamable.com/s/g6hiw/ppioc" frameborder="0" allowfullscreen=""></iframe>		</center>								</td></tr>
+    <tr>
+    
+    <td><font color="white"><center>Skill move  </font> <br> <iframe width="720" height="480" src="https://streamable.com/s/wzuyc/ytdlny" frameborder="0" allowfullscreen=""></iframe>		</center>								</td>
+    
+    
+    <td><font color="white"><center>Chilena		</font>	<br> <iframe width="720" height="480" src="https://streamable.com/s/g6hiw/ppioc" frameborder="0" allowfullscreen=""></iframe>		</center> </td>
+    
+    </tr>
+</table>
 	  
-	 <tr><td>	<center><font color="white"> Gol Angulo	</font>	<br> <iframe width="720" height="480" src="https://streamable.com/s/l9dgz/dgqzns" frameborder="0" allowfullscreen=""></iframe>		</center>								</td>
+	 <tr><td>	<center><font color="white">Gol Angulo	</font>	<br> <iframe width="720" height="480" src="https://streamable.com/s/l9dgz/dgqzns" frameborder="0" allowfullscreen=""></iframe>		</center>								</td>
 <!-- <td>		<center>	<iframe width="720" height="480" src="https://streamable.com/ID1" frameborder="0" allowfullscreen=""></iframe>		</center>								</td></tr>
 	  
 
@@ -103,7 +82,37 @@ search.addEventListener("keyup", function(){
 	  
 	  
     </table>
+<script type="text/javascript">
+var cells = document.querySelectorAll("#myTable td");
+var search = document.getElementById("myInput");
 
+search.addEventListener("keyup", function(){
+
+  for(var i = 0; i < cells.length; ++i){
+    // This line checks for an exact match in a cell against what the
+    // user entered in the search box
+    //if(cells[i].textContent.toLowerCase() === search.value.toLowerCase()){
+    
+    // This checks for cells that start with what the user has entered
+    if(cells[i].textContent.toLowerCase().indexOf(search.value.toLowerCase()) === 0){      
+        cells.forEach(function(element){
+            element.style.display = "none";
+        });
+        cells[i].style.background = "black";
+        cells[i].style.display = "table-cell";
+        break;
+    } else {
+        cells[i].style.background = "black";
+        cells.forEach(function(element){
+          if(cells[i] !== element){
+            element.style.display = "table-cell";
+          }
+        }); 
+    }    
+  }
+
+});
+</script>
 
 </font>
 </body>
