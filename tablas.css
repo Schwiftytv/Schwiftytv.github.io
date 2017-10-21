@@ -5,15 +5,17 @@
 }
 
 
-@media  (max-width:1036px){
+@media  (max-width:1500px){
     #myTable{
         width:100%;
+	border-collapse: collapse;
     }
 
     td{
         display:block;
+	border-collapse: collapse;
         width:100%;
-        height: 200px;
+        height: 100%;
     }
 
     tr{
